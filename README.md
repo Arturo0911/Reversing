@@ -5,15 +5,19 @@
 - rbp => base pointer
 - rsp => stack pointer
 - rax => acumulador
-- rdx => para almacenar la data
-- rcx => contador (usado en loops)
-- rsi => segunda variable
-- rdi => primera variable
+- rdx => General register or to pass arguments.
+- rcx => contador (used in loops).
+- rsi => second variable
+- rdi => first variable
+- eip => next instruction to be executed
 - eax => variable global usada en CPU architectures
 - rbx => base
-- rip => instruction pointer
+- rip => instruction pointer (actual instruction that is executing)
+- lea => Load Effective address
 
+## Keywords.
 
+  - Breakpoint:
 
 ## Reversing samples
 
