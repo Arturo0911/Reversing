@@ -5,7 +5,7 @@ import sys
 
 
 def main():
-    size = sys.argv[1]
+    size = int(sys.argv[1])
     first = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     second = "abcdefghijklmnopqrstuvwxyz"
     value = range(0, 10)
@@ -17,7 +17,7 @@ def main():
                 payload += x+y+str(z)
                 if len(payload) >= size:
                     flag = True
-                    payload = payload[:200]
+                    payload = payload[:size]
                     break
             if flag:
                 break
