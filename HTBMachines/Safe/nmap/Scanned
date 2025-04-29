@@ -1,0 +1,93 @@
+# Nmap 7.94SVN scan initiated Mon Apr 28 23:13:32 2025 as: nmap -sS -sC -sV -p- --open --min-rate=10000 -vvvv -n -Pn -T4 -oN nmap/Scanned 10.10.10.147
+Warning: Hit PCRE_ERROR_MATCHLIMIT when probing for service http with the regex '^HTTP/1\.1 \d\d\d (?:[^\r\n]*\r\n(?!\r\n))*?.*\r\nServer: Virata-EmWeb/R([\d_]+)\r\nContent-Type: text/html; ?charset=UTF-8\r\nExpires: .*<title>HP (Color |)LaserJet ([\w._ -]+)&nbsp;&nbsp;&nbsp;'
+Nmap scan report for 10.10.10.147
+Host is up, received user-set (0.18s latency).
+Scanned at 2025-04-28 23:13:32 -05 for 109s
+Not shown: 65329 closed tcp ports (reset), 203 filtered tcp ports (no-response)
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE REASON         VERSION
+22/tcp   open  ssh     syn-ack ttl 63 OpenSSH 7.4p1 Debian 10+deb9u6 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 6d:7c:81:3d:6a:3d:f9:5f:2e:1f:6a:97:e5:00:ba:de (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC1lhlptw4YE96mogUlBKcqkeUXEOiCLbQxwjfzb4Zv7ddGBtF3jBi1mitjd+njlQQn9KqVXjPjtoEp17iSyI851O++s5SiSt1bIALdd4DA+n65dGZUvotBah+rTCrPa8yUyQ9NaXO1e2ALHZ+qWJJDBYULqTYrqObF1fErk+uaJ2EInSm4O3E4a1rDJP9M6OFInq9er3dVVXzR7pyIyLLiGOnmwrm+XX9/YZ3i9R+S4yb4OexUzLE6s52ZQMPaznExnAnA7EXFojw1+VT5sncZ4hiqBvaYXFHLRZTytiKYO4Bf/Ntl1+IOOQjyvpSnxVy+Riew/AZXMm3qwl/MrNdX
+|   256 99:7e:1e:22:76:72:da:3c:c9:61:7d:74:d7:80:33:d2 (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBCBjZCYZ/SIu/q2bMhVAICKM1a09kOxqXxGZ/Skm0OnzqhoF3Tj2+F6OfYr7yFoF8/SzWiKAOdmyYafg/mTJVT8=
+|   256 6a:6b:c3:8e:4b:28:f7:60:85:b1:62:ff:54:bc:d8:d6 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAINspYs2G7atyE7B4AbsflH8zPxqXWDZv89V1FD9q5ZtB
+80/tcp   open  http    syn-ack ttl 63 Apache httpd 2.4.25 ((Debian))
+|_http-title: Apache2 Debian Default Page: It works
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.25 (Debian)
+1337/tcp open  waste?  syn-ack ttl 63
+| fingerprint-strings: 
+|   DNSStatusRequestTCP: 
+|     00:15:17 up 4 min, 0 users, load average: 0.01, 0.10, 0.06
+|   DNSVersionBindReqTCP: 
+|     00:15:12 up 4 min, 0 users, load average: 0.01, 0.10, 0.06
+|   GenericLines: 
+|     00:14:59 up 4 min, 0 users, load average: 0.01, 0.11, 0.07
+|     What do you want me to echo back?
+|   GetRequest: 
+|     00:15:06 up 4 min, 0 users, load average: 0.01, 0.10, 0.06
+|     What do you want me to echo back? GET / HTTP/1.0
+|   HTTPOptions: 
+|     00:15:06 up 4 min, 0 users, load average: 0.01, 0.10, 0.06
+|     What do you want me to echo back? OPTIONS / HTTP/1.0
+|   Help: 
+|     00:15:22 up 4 min, 0 users, load average: 0.01, 0.10, 0.06
+|     What do you want me to echo back? HELP
+|   NULL: 
+|     00:14:59 up 4 min, 0 users, load average: 0.01, 0.11, 0.07
+|   RPCCheck: 
+|     00:15:07 up 4 min, 0 users, load average: 0.01, 0.10, 0.06
+|   RTSPRequest: 
+|     00:15:06 up 4 min, 0 users, load average: 0.01, 0.10, 0.06
+|     What do you want me to echo back? OPTIONS / RTSP/1.0
+|   SSLSessionReq: 
+|     00:15:23 up 4 min, 0 users, load average: 0.01, 0.10, 0.06
+|     What do you want me to echo back?
+|   TLSSessionReq: 
+|     00:15:24 up 5 min, 0 users, load average: 0.01, 0.10, 0.06
+|     What do you want me to echo back?
+|   TerminalServerCookie: 
+|     00:15:23 up 5 min, 0 users, load average: 0.01, 0.10, 0.06
+|_    What do you want me to echo back?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port1337-TCP:V=7.94SVN%I=7%D=4/28%Time=681051FA%P=x86_64-pc-linux-gnu%r
+SF:(NULL,3E,"\x2000:14:59\x20up\x204\x20min,\x20\x200\x20users,\x20\x20loa
+SF:d\x20average:\x200\.01,\x200\.11,\x200\.07\n")%r(GenericLines,63,"\x200
+SF:0:14:59\x20up\x204\x20min,\x20\x200\x20users,\x20\x20load\x20average:\x
+SF:200\.01,\x200\.11,\x200\.07\n\nWhat\x20do\x20you\x20want\x20me\x20to\x2
+SF:0echo\x20back\?\x20\r\n")%r(GetRequest,71,"\x2000:15:06\x20up\x204\x20m
+SF:in,\x20\x200\x20users,\x20\x20load\x20average:\x200\.01,\x200\.10,\x200
+SF:\.06\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20GET\
+SF:x20/\x20HTTP/1\.0\r\n")%r(HTTPOptions,75,"\x2000:15:06\x20up\x204\x20mi
+SF:n,\x20\x200\x20users,\x20\x20load\x20average:\x200\.01,\x200\.10,\x200\
+SF:.06\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20OPTIO
+SF:NS\x20/\x20HTTP/1\.0\r\n")%r(RTSPRequest,75,"\x2000:15:06\x20up\x204\x2
+SF:0min,\x20\x200\x20users,\x20\x20load\x20average:\x200\.01,\x200\.10,\x2
+SF:00\.06\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20OP
+SF:TIONS\x20/\x20RTSP/1\.0\r\n")%r(RPCCheck,3E,"\x2000:15:07\x20up\x204\x2
+SF:0min,\x20\x200\x20users,\x20\x20load\x20average:\x200\.01,\x200\.10,\x2
+SF:00\.06\n")%r(DNSVersionBindReqTCP,3E,"\x2000:15:12\x20up\x204\x20min,\x
+SF:20\x200\x20users,\x20\x20load\x20average:\x200\.01,\x200\.10,\x200\.06\
+SF:n")%r(DNSStatusRequestTCP,3E,"\x2000:15:17\x20up\x204\x20min,\x20\x200\
+SF:x20users,\x20\x20load\x20average:\x200\.01,\x200\.10,\x200\.06\n")%r(He
+SF:lp,67,"\x2000:15:22\x20up\x204\x20min,\x20\x200\x20users,\x20\x20load\x
+SF:20average:\x200\.01,\x200\.10,\x200\.06\n\nWhat\x20do\x20you\x20want\x2
+SF:0me\x20to\x20echo\x20back\?\x20HELP\r\n")%r(SSLSessionReq,64,"\x2000:15
+SF::23\x20up\x204\x20min,\x20\x200\x20users,\x20\x20load\x20average:\x200\
+SF:.01,\x200\.10,\x200\.06\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20ech
+SF:o\x20back\?\x20\x16\x03\n")%r(TerminalServerCookie,63,"\x2000:15:23\x20
+SF:up\x205\x20min,\x20\x200\x20users,\x20\x20load\x20average:\x200\.01,\x2
+SF:00\.10,\x200\.06\n\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20ba
+SF:ck\?\x20\x03\n")%r(TLSSessionReq,64,"\x2000:15:24\x20up\x205\x20min,\x2
+SF:0\x200\x20users,\x20\x20load\x20average:\x200\.01,\x200\.10,\x200\.06\n
+SF:\nWhat\x20do\x20you\x20want\x20me\x20to\x20echo\x20back\?\x20\x16\x03\n
+SF:");
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Apr 28 23:15:21 2025 -- 1 IP address (1 host up) scanned in 109.08 seconds
