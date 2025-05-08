@@ -1,0 +1,45 @@
+5570d2cdb000-5570d2cdc000 r--p 00000000 08:01 2408                       /usr/bin/activate_license
+5570d2cdc000-5570d2cdd000 r-xp 00001000 08:01 2408                       /usr/bin/activate_license
+5570d2cdd000-5570d2cde000 r--p 00002000 08:01 2408                       /usr/bin/activate_license
+5570d2cde000-5570d2cdf000 r--p 00002000 08:01 2408                       /usr/bin/activate_license
+5570d2cdf000-5570d2ce0000 rw-p 00003000 08:01 2408                       /usr/bin/activate_license
+5570d33dd000-5570d33fe000 rw-p 00000000 00:00 0                          [heap]
+7fda1480f000-7fda14811000 rw-p 00000000 00:00 0 
+7fda14811000-7fda14812000 r--p 00000000 08:01 3635                       /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+7fda14812000-7fda14814000 r-xp 00001000 08:01 3635                       /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+7fda14814000-7fda14815000 r--p 00003000 08:01 3635                       /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+7fda14815000-7fda14816000 r--p 00003000 08:01 3635                       /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+7fda14816000-7fda14817000 rw-p 00004000 08:01 3635                       /usr/lib/x86_64-linux-gnu/libdl-2.31.so
+7fda14817000-7fda1481e000 r--p 00000000 08:01 3645                       /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+7fda1481e000-7fda1482e000 r-xp 00007000 08:01 3645                       /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+7fda1482e000-7fda14833000 r--p 00017000 08:01 3645                       /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+7fda14833000-7fda14834000 r--p 0001b000 08:01 3645                       /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+7fda14834000-7fda14835000 rw-p 0001c000 08:01 3645                       /usr/lib/x86_64-linux-gnu/libpthread-2.31.so
+7fda14835000-7fda14839000 rw-p 00000000 00:00 0 
+7fda14839000-7fda14848000 r--p 00000000 08:01 3636                       /usr/lib/x86_64-linux-gnu/libm-2.31.so
+7fda14848000-7fda148e2000 r-xp 0000f000 08:01 3636                       /usr/lib/x86_64-linux-gnu/libm-2.31.so
+7fda148e2000-7fda1497b000 r--p 000a9000 08:01 3636                       /usr/lib/x86_64-linux-gnu/libm-2.31.so
+7fda1497b000-7fda1497c000 r--p 00141000 08:01 3636                       /usr/lib/x86_64-linux-gnu/libm-2.31.so
+7fda1497c000-7fda1497d000 rw-p 00142000 08:01 3636                       /usr/lib/x86_64-linux-gnu/libm-2.31.so
+7fda1497d000-7fda149a2000 r--p 00000000 08:01 3634                       /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7fda149a2000-7fda14aed000 r-xp 00025000 08:01 3634                       /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7fda14aed000-7fda14b37000 r--p 00170000 08:01 3634                       /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7fda14b37000-7fda14b38000 ---p 001ba000 08:01 3634                       /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7fda14b38000-7fda14b3b000 r--p 001ba000 08:01 3634                       /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7fda14b3b000-7fda14b3e000 rw-p 001bd000 08:01 3634                       /usr/lib/x86_64-linux-gnu/libc-2.31.so
+7fda14b3e000-7fda14b42000 rw-p 00000000 00:00 0 
+7fda14b42000-7fda14b52000 r--p 00000000 08:01 5321                       /usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6
+7fda14b52000-7fda14c4a000 r-xp 00010000 08:01 5321                       /usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6
+7fda14c4a000-7fda14c7e000 r--p 00108000 08:01 5321                       /usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6
+7fda14c7e000-7fda14c82000 r--p 0013b000 08:01 5321                       /usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6
+7fda14c82000-7fda14c85000 rw-p 0013f000 08:01 5321                       /usr/lib/x86_64-linux-gnu/libsqlite3.so.0.8.6
+7fda14c85000-7fda14c87000 rw-p 00000000 00:00 0 
+7fda14c8c000-7fda14c8d000 r--p 00000000 08:01 3630                       /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7fda14c8d000-7fda14cad000 r-xp 00001000 08:01 3630                       /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7fda14cad000-7fda14cb5000 r--p 00021000 08:01 3630                       /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7fda14cb6000-7fda14cb7000 r--p 00029000 08:01 3630                       /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7fda14cb7000-7fda14cb8000 rw-p 0002a000 08:01 3630                       /usr/lib/x86_64-linux-gnu/ld-2.31.so
+7fda14cb8000-7fda14cb9000 rw-p 00000000 00:00 0 
+7ffc26b04000-7ffc26b25000 rw-p 00000000 00:00 0                          [stack]
+7ffc26bf0000-7ffc26bf4000 r--p 00000000 00:00 0                          [vvar]
+7ffc26bf4000-7ffc26bf6000 r-xp 00000000 00:00 0                          [vdso]
